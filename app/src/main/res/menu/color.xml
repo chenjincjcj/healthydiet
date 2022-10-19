@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color android:name="colorPrimary">#008577</color>
+        <color android:name="colorPrimaryDark">#00574B</color>
+            <color android:name="colorAccent">#D81B60</color>
+                <color android:name="itemTint">#878787</color>
+                    <color android:name="itemTextColor">#121212</color>
+                        </resources>

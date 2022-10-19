@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#08000000"
+        app:selectionRequired="true">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:textColor="@color/black"
+            app:icon="@drawable/shouye"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black"
+            android:backgroundTint="@color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发现"
+            android:textColor="@color/black"
+            app:icon="@drawable/faxian"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black"
+            android:backgroundTint="@color/white"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tab_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="服务"
+            android:textColor="@color/black"
+            app:icon="@drawable/user"
+            app:iconGravity="textTop"
+            app:iconTint="@color/black"
+           android:backgroundTint="@color/white"/>
+
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+</LinearLayout>
