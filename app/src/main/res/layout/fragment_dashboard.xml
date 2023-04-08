@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:image_scale_type="center"
+        app:indicator_height="8dp"
+        app:indicator_margin="5dp"
+        app:indicator_width="8dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="20dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/purple_200"
+                    app:cornerRadius="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="视频区"
+                    android:textColor="@color/black"
+                    android:textSize="35dp" />
+            </LinearLayout>
+             <LinearLayout
+                    android:layout_margin="15dp"
+                    android:id="@+id/pengren"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/shap3">
+                    <LinearLayout
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                         <TextView
+                             android:layout_weight="1"
+                             android:layout_width="match_parent"
+                             android:layout_height="0dp"
+                             android:text="烹饪区:"
+                             android:textStyle="italic"
+
+                             android:textColor="#FAF8F8"
+                             android:textSize="35dp"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textSize="25dp"
+                            android:gravity="center"
+                            android:text="进来学习吧"
+                            android:textColor="#F9F8FA"/>
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:textSize="25dp"
+                            android:text="抓住他的胃吧！"
+                            android:textColor="#EA0957"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:src="@drawable/pengren"/>
+                    </LinearLayout>
+             </LinearLayout>
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:id="@+id/yangsheng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shap1">
+                <LinearLayout
+                    android:layout_weight="3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="养生区:"
+                        android:textStyle="italic"
+
+                        android:textColor="@color/black"
+                        android:textSize="35dp"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:text="进来学习吧"
+                        android:textColor="#4CAF50"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="25dp"
+                        android:text="抓住他的胃吧！"
+                        android:textColor="#EA0957"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/yangsheng"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:id="@+id/kepu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/shap3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="129dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="科普区:"
+                        android:textColor="#FAF8F8"
+
+                        android:textSize="35dp"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="进来学习吧"
+                        android:textColor="#F9F8FA"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="抓住他的胃吧！"
+                        android:textColor="#EA0957"
+                        android:textSize="25dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/kepu"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+        <ImageView
+            android:id="@+id/ico1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/shequ_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico1"
+            android:textColor="#FF82AB" />
+        <TextView
+            android:id="@+id/shequ_msage"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shequ_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico1"
+            android:minLines="3"
+            />
+        <ImageView
+            android:id="@+id/shequ_image"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_below="@id/shequ_msage"
+            android:layout_alignParentLeft="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

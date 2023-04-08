@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xiaxian.bbbbActivity"
+    android:orientation="vertical"
+    android:background="@drawable/xuanze_background">
+ <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F0F4F4F1"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+    <TextView
+        android:text="应该怎么区选择健康饮食呢"
+        android:id="@+id/xuanze_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#CD41E4"
+        android:gravity="center"/>
+        <TextView
+            android:text="指南非常简单，健康饮食的建议有两条：
+第一：健康饮食并不仅仅是你吃了什么食物，还包括为什么吃、什么时候吃，以及怎么吃。
+（1）吃东西的时候要适可而止，饱了就不要吃；也不要等到太饿了再吃。
+（2）平时饮食，尽量自己烹调、制作，也可以跟亲朋好友一起烹调、制作食物。
+（3）享受食物，包括文化和饮食习惯。
+（4）跟朋友、家人一起分享食物。
+第二：每天都保持健康多样的饮食习惯。
+（1）吃种类丰富多样的蔬菜和水果、全谷物和蛋白质食物，尽量常吃一些富含蛋白质的植物类食物，少吃饱和脂肪。
+（2）限制深度加工的食物，如果要吃，尽量少量。选择低盐、低糖和低饱和脂肪的食物。
+（3）足量饮水，将水作为日常的补液首选，用水替代含糖饮料。
+（4）学会看食品标签。
+（5）市场会影响你的食物选择。
+具体怎么做呢？这个指南给出了三条建议
+营养价值高的食物是健康饮食的基础。营养价值高的食物包括种类丰富多样的蔬菜、水果、全谷物和蛋白质食物类，其中植物源蛋白质食物类包括大豆、坚果、豆腐等。
+高糖高盐及高饱和脂肪的食物要少吃。包括含糖饮料、糖果、酒精饮料。
+巧用食品技能指导健康饮食。包括烹调技巧、食物标签等。"
+            android:layout_marginTop="30dp"
+            android:id="@+id/masage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"/>
+        <TextView
+            android:text="文章来源小红书"
+            android:layout_marginTop="15dp"
+            android:id="@+id/laiyuan"
+            android:textStyle="italic"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/lianjie"
+            android:text="相关链接"
+            android:backgroundTint="#E0F8F1F1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:textSize="20dp"
+            android:textColor="@color/teal_200"
+            android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="评论区:"
+                android:textSize="35dp"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_xuanze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/inputText1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="留下你的评论吧"
+                    android:maxLines="2" />
+                <Button
+                    android:id="@+id/send1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+ </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

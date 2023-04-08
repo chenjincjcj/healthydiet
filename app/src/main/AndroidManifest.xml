@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ccccccc">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/one"
+        android:label="一个柠檬"
+        android:roundIcon="@drawable/one"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Ccccccc">
+        <activity android:name=".ui.TestActivity"/>
+        <activity android:name=".ui.jianshen.JianshennActivity" />
+        <activity android:name=".ui.jinri.JinriActivity" />
+        <activity android:name=".ui.shequ.ShequActivity2" />
+        <activity android:name=".ui.shequ.ShequActivity" />
+        <activity android:name=".ui.kepu.KepuActivity2" />
+        <activity android:name=".ui.kepu.KepuActivity" />
+        <activity android:name=".xiaxian.YangshengActivity2" />
+        <activity android:name=".ui.YangshengActivity" />
+        <activity android:name=".PengrenActivity2" />
+        <activity
+            android:name=".PengrenActivity"
+            android:label="烹饪视频" />
+        <activity android:name=".xiaxian.TizhongActivity" />
+        <activity android:name=".xiaxian.WeiActivity" />
+        <activity android:name=".ui.dati.LianjieActivity" />
+        <activity android:name=".FruitActivity2" />
+        <activity android:name=".FruitActivity" />
+        <activity android:name=".ZhushiActivity" />
+        <activity android:name=".ui.dati.DatiActivity" />
+        <activity android:name=".ZhushiActivity2" />
+        <activity android:name=".ShucaiActivity" />
+        <activity android:name=".ShucaiActivity2" />
+        <activity android:name=".xiaxian.bbbbActivity" />
+        <activity android:name=".ui.start.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".xiaxian.BroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ui.SQLiteActivity" />
+        <activity android:name=".ui.Massag" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".DengluActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="一个柠檬" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.cameraalbumtest.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.jinri.JinriActivity"
+    >
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/jinri">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="80dp"
+
+                android:text="今日食品推荐:"
+                android:textColor="#DD1818"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/jinri_image"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hong" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="外婆红烧肉"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="制作方法:"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/msage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="35dp"
+                android:text="外婆红烧肉\n
+            以五花肉、鹌鹑蛋为主料的菜品\n
+            上海本帮菜。外焦里嫩，香甜润滑，油而不腻。和北方的红烧肉不同，少一分咸、多一分甜。\n
+            带皮肉洗净，将猪毛处理干净，为了拔几根顽固的猪毛，我都用上了眉毛夹子，呵呵，很轻松的就把的干干净净了！\n
+            将肉切成麻将牌大小正方形的块，肉不要切得太小，太小易缩易碎，没有卖相了。切完后，用冷水浸没，水中放半杯料酒。放在水中浸，可以浸去毛细血管中的血水；水中加酒易于肉纤维吸收，去除肉腥。肉不宜多浸，多浸则鲜味尽失，一般浸十五分钟左右即可。"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:text="小知识:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/zhishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="100dp"
+                android:text="红烧肉的宜忌人群\n
+
+1、什么人能吃红烧肉\n
+
+1.1、一般健康人和患有疾病之人均能食之，但食之过多，便使人摄入了过多热量，多余的热量转化为脂肪。在人体内储存，就致人肥胖，肥胖则易发多种疾病；多食或冷食易引起胃肠饱胀或腹胀腹泻。\n
+
+1.2、适宜阴虚不足、头晕、贫血、老人燥咳无痰、大便干结，以及营养不良者食用。\n
+
+1.3、猪皮和猪蹄具有“和气血、润肌肤、可美容”的功效，爱美的女性可多食用猪皮和猪蹄。\n
+
+2、什么人不能吃红烧肉\n
+
+2.1、对于脂肪及猪油，患高血压或偏瘫（中风）病者及肠胃虚寒、虚肥身体、痰湿盛、宿食不化者应慎食或少食之。\n
+
+2.2、由于猪肉中胆固醇含量偏高，故糖尿病、肥胖人群及血脂较高者不宜多食。\n
+
+2.3、对湿热偏重、痰湿偏盛、舌苔厚腻之人，忌食猪肉。\n
+
+2.4、红烧肉中含有很多的色素成分，因此，有外伤的人不适合食用，避免愈合后伤口色素沉淀，对今后伤口恢复不宜。"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+        </LinearLayout>
+    </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</LinearLayout>

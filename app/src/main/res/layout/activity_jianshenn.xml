@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.jianshen.JianshennActivity">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:backgroundTint="@color/teal_200"
+       android:src="@drawable/song"
+        android:elevation="8dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+       android:layout_marginBottom="80dp"
+        android:layout_marginRight="16dp"
+        app:backgroundTint="@color/purple_200"
+        android:src="@drawable/song"
+        android:elevation="8dp"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:background="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/jiansehnToolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="@color/purple_200"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <VideoView
+                android:layout_gravity="center"
+                android:id="@+id/jianshenvoideView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:backgroundTint="@color/white"
+                    app:iconTint="@null"
+                    app:icon="@drawable/kaishi"
+                    app:iconGravity="textTop"
+                    android:id="@+id/play"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="开始"
+                    android:textColor="@color/black"/>
+                <com.google.android.material.button.MaterialButton
+
+                    android:backgroundTint="@color/white"
+                    app:icon="@drawable/zanting"
+                    app:iconTint="@null"
+                    app:backgroundTint="@color/white"
+                    app:iconGravity="textTop"
+                    android:id="@+id/pause"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="暂停"
+                    android:textColor="@color/black"/>
+                <com.google.android.material.button.MaterialButton
+                    app:iconGravity="textTop"
+                    app:icon="@drawable/chongxin"
+                    app:backgroundTint="@color/white"
+                    app:iconTint="@null"
+                    android:id="@+id/replay"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:text="重新开始"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                app:cardCornerRadius="4dp"
+                >
+                <TextView
+                    android:id="@+id/jiasnhenContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="22dp"
+                    />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="专项计时:"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:textStyle="italic" />
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+                <TextView
+                    android:id="@+id/xiangmu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text=""/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/xiangmu_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:textSize="30dp"
+                    android:text=""/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/xiangmu_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:textSize="30dp"
+                    android:text=""/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/xiangmu_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:textSize="30dp"
+                    android:text=""/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                app:cardCornerRadius="4dp"
+                >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上次记录"
+            android:textSize="25dp" />
+        <TextView
+            android:id="@+id/da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom|center"
+        android:textColor="#ff0000"
+        android:textSize="40sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="60dp"
+            android:layout_height="71dp"
+            app:iconTint="@null"
+            app:icon="@drawable/kaishi"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:text="开始" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop"
+            android:layout_width="60dp"
+            android:layout_height="71dp"
+            app:iconTint="@null"
+            app:icon="@drawable/zanting"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/white"
+            android:text="暂停" />
+        <Button
+            android:id="@+id/countinue"
+            android:layout_width="60dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="20dp"
+            android:text="继续" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bun4"
+            android:layout_width="60dp"
+            android:layout_height="71dp"
+            app:iconTint="@null"
+            app:icon="@drawable/chongxin"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/white"
+            android:text="重置" />
+    </LinearLayout>
+
+      </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

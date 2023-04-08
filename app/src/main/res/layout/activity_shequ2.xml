@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.shequ.ShequActivity2"
+    android:orientation="vertical"
+    android:background="@drawable/shequ">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/tianjia"
+        app:elevation="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/tab_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    app:iconTint="@null"
+    app:backgroundTint="#00000000"
+    app:icon="@drawable/shuxin"
+    app:iconSize="40dp"
+    android:text="刷新"
+    android:textSize="20dp"
+    android:textColor="@color/white"
+    app:iconGravity="textTop"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/shequ_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+    <!--动态1-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico1"
+            android:text="奶酪泡芙"
+            android:textColor="#FF82AB" />
+
+        <Button
+            android:id="@+id/bottom1"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/content1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name1"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico1"
+            android:minLines="3"
+            android:text="  是吵吵闹闹但是还是想陪在身边的人。" />
+
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content1"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ico1"
+            android:text="1分钟前"
+            android:textColor="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/comment1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/content1"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+    <!--动态2-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico2"
+            android:text="岁岁"
+            android:textColor="#FF82AB" />
+
+        <TextView
+            android:id="@+id/content2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico2"
+            android:minLines="3"
+            android:text="       永远喜欢简单又真诚的人，我的爱从来不和差点意思的人周旋。" />
+
+        <Button
+            android:id="@+id/bottom2"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content2"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ico2"
+            android:text="5分钟前"
+            android:textColor="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/comment2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/content2"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete"/>
+
+    </RelativeLayout>
+
+    <!--动态3-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico3"
+            android:text="年年"
+            android:textColor="#FF82AB" />
+
+        <TextView
+            android:id="@+id/content3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name3"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico3"
+            android:minLines="3"
+            android:text="每天有意无意的分享就是最美好的瞬间" />
+
+        <Button
+            android:id="@+id/bottom3"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content3"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ico3"
+            android:text="16分钟前"
+            android:textColor="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/comment3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/content3"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+    </RelativeLayout>
+
+    <!--动态4-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/ico4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/nav_icon" />
+
+        <TextView
+            android:id="@+id/name4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico4"
+            android:text="碎碎念"
+            android:textColor="#FF82AB" />
+
+        <TextView
+            android:id="@+id/content4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name4"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ico4"
+            android:minLines="3"
+            android:text="没有人会一直爱你 但永远会有人爱你" />
+
+        <Button
+            android:id="@+id/bottom4"
+            android:layout_width="22dp"
+            android:layout_height="34dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+
+        <TextView
+            android:id="@+id/time4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/content4"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/ico4"
+            android:text="30分钟前"
+            android:textColor="#9A9A9A" />
+
+        <ImageView
+            android:id="@+id/comment4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/content4"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_delete" />
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

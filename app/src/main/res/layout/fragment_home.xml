@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--设置标题界面名称和打卡-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tab_study"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今日推荐"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tab_stable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Go!"
+                    android:textColor="#666666"
+                    android:textSize="14dp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+            <com.youth.banner.Banner
+                android:clickable="true"
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:image_scale_type="center"
+                app:indicator_height="8dp"
+                app:indicator_margin="5dp"
+                app:indicator_width="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <!--        设置搜索按钮-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="分类"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <!--    设置分类按钮-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_zhushi"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:text="主食"
+                    android:textColor="#333333"
+                    app:icon="@drawable/zhushi"
+                    app:iconGravity="textTop"
+                    app:iconSize="20dp"
+                    app:iconTint="@null" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_shucai"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:text="蔬菜"
+                    android:textColor="#333333"
+                    app:icon="@drawable/shucai"
+                    app:iconGravity="textTop"
+                    app:iconSize="20dp"
+                    app:iconTint="@null" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_fruit"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:text="水果"
+                    android:textColor="#333333"
+                    app:icon="@drawable/fruit"
+                    app:iconGravity="textTop"
+                    app:iconSize="20dp"
+                    app:iconTint="@null" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/item_youzhi"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/white"
+                    android:text="油脂"
+                    android:textColor="#333333"
+                    app:icon="@drawable/youzhi"
+                    app:iconGravity="textTop"
+                    app:iconSize="20dp"
+                    app:iconTint="@null" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="小知识"
+                    android:textSize="20dp" />
+            </LinearLayout>
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/dati"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="50dp"
+    app:icon="@drawable/dati_background"
+    app:iconTint="@null"
+    android:backgroundTint="@color/purple_200"
+    app:iconSize="150dp"
+    android:text="每日一问"
+    app:iconGravity="textEnd"
+    app:cornerRadius="20dp"/>
+
+     <com.google.android.material.button.MaterialButton
+     android:id="@+id/xuanze"
+     android:layout_marginTop="15dp"
+     android:layout_width="300dp"
+     android:layout_height="150dp"
+     android:layout_marginLeft="50dp"
+     app:icon="@drawable/xuanze"
+     app:iconTint="@null"
+     android:backgroundTint="#27E8D5"
+      app:iconSize="140dp"
+      android:text="你是不是\n也在思考怎样选择"
+     app:iconGravity="textEnd"
+     app:cornerRadius="20dp"/>
+     <com.google.android.material.button.MaterialButton
+     android:id="@+id/wei"
+     android:layout_marginTop="15dp"
+     android:layout_width="300dp"
+     android:layout_height="150dp"
+     android:layout_marginLeft="50dp"
+     app:icon="@drawable/wei"
+     app:iconTint="@null"
+     android:backgroundTint="#8BC34A"
+    app:iconSize="140dp"
+    android:text="“胃”！你好吗"
+    app:iconGravity="textEnd"
+    app:cornerRadius="20dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

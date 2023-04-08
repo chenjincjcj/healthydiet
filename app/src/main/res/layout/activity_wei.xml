@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".xiaxian.WeiActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="@color/purple_200"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/wei_ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/wei_image"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wei_title"
+                android:text="如何保持胃的健康"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="45dp"
+                android:textColor="@color/purple_200"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="4dp">
+
+                <TextView
+                    android:text="1. 规律吃饭
+尽量保持定时定量进餐，可以少食多餐，千万别暴饮暴食。
+2. 不迷信细软食物
+胃是一个用进废退的器官。
+长期吃细软、半流质、流质的食物，反而会削弱它消化和处理食物的能力。
+所以，如无特殊情况，食物的选择上，优先考虑粗加工、新鲜、健康的食材，比如新鲜蔬果、原味坚果等。
+3. 多样饮食
+一般来说，除了胃病急性发作期、胃病症状尚未完全好转，或者存在食物过敏、食物不耐受的情况，患者若没有什么食物禁忌，想要胃健康，就需要营养充足。
+杂粮、蔬菜、水果、肉类、奶类、坚果和豆类等都应该适量吃。
+4. 循序渐进地吃
+对于容易胀气的食物，可以由少到多循序渐进地吃，不要一次吃太多。
+比如红薯、紫薯、荞麦、豆类等杂粮；西蓝花、白菜花、毛豆、苦瓜等蔬菜；巴旦木等坚果，等等。
+5. 质地硬的食物做软糯些再吃
+比如做杂粮饭、杂粮粥，要提前浸泡质地较硬的杂粮。并且，选择电压力锅等方式，做得尽量软糯。
+6. 细嚼慢咽
+如果吃质地略硬的食物，更需要注意认真咀嚼，使食物与胃液充分接触，减轻胃的负担。
+7. 远离一些食物
+不要喝太多咖啡、酒、产气饮料（比如可乐、雪碧等）、浓茶等。
+养胃
+发布于 2022-02-19 12:51"
+                    android:id="@+id/wei_msage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="22dp" />
+
+            </com.google.android.material.card.MaterialCardView>
+           <TextView
+               android:text="文章来源小红书"
+               android:id="@+id/liayuan_wei"
+               android:layout_width="200dp"
+               android:layout_height="60dp"
+               android:textColor="#FF5722"
+               android:textSize="25dp"/>
+            <Button
+                android:backgroundTint="@color/teal_200"
+                android:id="@+id/xiangguan_wei"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_gravity="right"
+                android:text="相关链接"
+                android:textSize="25dp"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="评论区:"
+    android:textSize="35dp"
+    android:textStyle="italic"/>
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                tools:ignore="WebViewLayout" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_wei"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/inputText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="留下你的评论吧"
+                    android:maxLines="2" />
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发送" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
